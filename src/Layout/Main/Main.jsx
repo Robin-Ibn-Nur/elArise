@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import Footer from '../../Pages/Footer/Footer';
 import Header from '../../Pages/Header/Header';
+import Opening from '../../Loader/Opening';
 
 const Main = () => {
     const [loading, setLoading] = useState(true);
@@ -16,9 +17,7 @@ const Main = () => {
     }, []);
     return (
         loading ? (
-            <div className={`flex items-center justify-center h-screen ${loading ? '' : 'hidden'}`}>
-                <div className="animate-spin rounded-full border-t-4 border-blue-500 border-solid h-16 w-16"></div>
-            </div>
+            <Opening />
         ) : (
             <>
                 <Header />

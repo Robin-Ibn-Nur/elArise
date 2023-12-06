@@ -3,7 +3,9 @@ import React, { useEffect, useState } from 'react';
 
 const Banner = () => {
     const [index, setIndex] = useState(0);
-    const images = ['https://img.freepik.com/free-photo/glowing-cyborg-statue-illuminated-blue-mystery-generated-by-ai_188544-14044.jpg?t=st=1701848287~exp=1701851887~hmac=9f4d7190d1b6a83e6715d1f374989d95129b112ed6abcd57f661706a8f5da2bb&w=826', 'https://img.freepik.com/free-photo/biometrics-concept-identity-person-use_587448-5027.jpg?t=st=1701854453~exp=1701858053~hmac=421ee52dbbc217ce138f6493fbfed8a0a9f9e8769531bec42ce2b960cc8661d4&w=826', 'https://img.freepik.com/premium-photo/shaking-hands-conclusion-business-deal-ai-generative_407474-6415.jpg?w=740'];
+    const images = ['https://img.freepik.com/free-photo/glowing-cyborg-statue-illuminated-blue-mystery-generated-by-ai_188544-14044.jpg?t=st=1701848287~exp=1701851887~hmac=9f4d7190d1b6a83e6715d1f374989d95129b112ed6abcd57f661706a8f5da2bb&w=826',
+        'https://img.freepik.com/free-photo/biometrics-concept-identity-person-use_587448-5027.jpg?t=st=1701854453~exp=1701858053~hmac=421ee52dbbc217ce138f6493fbfed8a0a9f9e8769531bec42ce2b960cc8661d4&w=826',
+        'https://img.freepik.com/premium-photo/shaking-hands-conclusion-business-deal-ai-generative_407474-6415.jpg?w=740'];
 
     useEffect(() => {
         const interval = setInterval(() => {

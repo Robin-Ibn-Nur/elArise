@@ -6,7 +6,8 @@ import {
     Collapse,
 } from "@material-tailwind/react";
 import { useEffect, useState } from "react";
-import navList from "../../Data/Data";
+import { navList } from "../../Data/Data";
+
 
 const Header = () => {
     const [openNav, setOpenNav] = useState(false);

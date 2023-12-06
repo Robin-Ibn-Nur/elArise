@@ -19,14 +19,36 @@
 
 .animated-text {
     display: flex;
-    /* Use flex display */
     white-space: nowrap;
     flex-direction: row;
-    /* Set flex-direction to row */
     animation: marquee 15s linear infinite;
 }
 
 .animated-text h1 {
     margin-right: 20px;
-    /* Adjust the spacing between items as needed */
+}
+
+.smart-gov {
+    background: #f5f5f5;
+    color: #343a40;
+    --s: 80px;
+    --_g: radial-gradient(#f5f5f5 45%, #63282800 46%);
+    --_l: radial-gradient(#ffffff 15%, #63282800 16%);
+    background: var(--_l), var(--_l), var(--_g), var(--_g);
+    background-position: 0 0, var(--s) var(--s);
+    background-size: calc(2 * var(--s)) calc(2 * var(--s));
+    animation: x 2s cubic-bezier(0.5, 92, 0.5, -92) infinite,
+        y 2s cubic-bezier(0.5, 92, 0.5, -92) infinite -0.5s;
+}
+
+@keyframes x {
+    to {
+        background-position-x: 1px, calc(var(--s) - 1px), 0, var(--s);
+    }
+}
+
+@keyframes y {
+    to {
+        background-position-y: 1px, calc(var(--s) - 1px), 0, var(--s);
+    }
 }

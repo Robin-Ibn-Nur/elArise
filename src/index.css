@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.animated-text {
+    display: flex;
+    /* Use flex display */
+    white-space: nowrap;
+    flex-direction: row;
+    /* Set flex-direction to row */
+    animation: marquee 15s linear infinite;
+}
+
+.animated-text h1 {
+    margin-right: 20px;
+    /* Adjust the spacing between items as needed */
+}

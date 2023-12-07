@@ -13,9 +13,9 @@ const Home = () => {
 
         <>
             <Banner />
-            {/* <Mrq /> */}
+            <Mrq />
             <DevelopOptions />
-            {/* <Mrq /> */}
+            <Mrq />
             <Work />
             <SmartGovernance />
             <Partner />

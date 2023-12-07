@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @keyframes marquee {
     0% {
         transform: translateX(100%);
@@ -51,4 +52,18 @@
     to {
         background-position-y: 1px, calc(var(--s) - 1px), 0, var(--s);
     }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
 }
